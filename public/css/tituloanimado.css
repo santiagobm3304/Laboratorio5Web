@@ -1,0 +1,64 @@
+
+#titulo-animado {
+    overflow: hidden;
+    /* Oculta el contenido que desborda el elemento */
+    border-right: 3px solid black;
+    /* Crea el efecto del cursor parpadeante */
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
+    margin: 0;
+    /* Elimina el margen predeterminado del h1 */
+}
+
+.titulo {
+    position: absolute;
+    /* Establece la posición "absoluta" para que el elemento se posicione en relación al contenedor padre */
+    top: 50%;
+    /* Desplaza el elemento hacia abajo el 50% de la altura del contenedor padre */
+    left: 50%;
+    /* Desplaza el elemento hacia la derecha el 50% del ancho del contenedor padre */
+    transform: translate(-50%, -50%);
+    /* Ajusta el elemento al centro del contenedor */
+    color: #fff;
+    /* Establece el color del texto */
+    font-size: 24px;
+    /* Establece el tamaño de fuente del texto */
+    width: 100%;
+}
+
+.titulo1 {
+    position: absolute;
+    /* Establece la posición "absoluta" para que el elemento se posicione en relación al contenedor padre */
+    top: 150%;
+    /* Desplaza el elemento hacia abajo el 50% de la altura del contenedor padre */
+    left: 50%;
+    /* Desplaza el elemento hacia la derecha el 50% del ancho del contenedor padre */
+    transform: translate(-50%, -50%);
+    /* Ajusta el elemento al centro del contenedor */
+    color: #fff;
+    /* Establece el color del texto */
+    font-size: 24px;
+    /* Establece el tamaño de fuente del texto */
+    width: 100%;
+}
+
+h1 {
+    font-size: 5rem;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.titulo-animado {
+    height: 5rem;
+}
+
+.contexto {
+    padding: 10rem;
+}
+
+font-face {
+    font-family: font;
+    src: url(https://dl.dropboxusercontent.com/u/50037593/ElasticSlider/hand.ttf);
+    font-weight: bold;
+}
