@@ -28,6 +28,7 @@
 </header>
 
 <body>
+    <button class="boton-volver-arriba"><img src="https://cdn-icons-png.flaticon.com/512/892/892550.png" alt=""></button>
     <section id="inicio" class="inicio">
         <div class="titulo">
             <h1 id="titulo-animado">H</h1>
@@ -360,6 +361,24 @@
 
 
         }
+    </script>
+    <script> //botón volver arriba
+        window.onscroll = function() {
+  mostrarBotonVolverArriba()
+};
+
+function mostrarBotonVolverArriba() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.querySelector(".boton-volver-arriba").style.display = "block";
+  } else {
+    document.querySelector(".boton-volver-arriba").style.display = "none";
+  }
+}
+
+document.querySelector(".boton-volver-arriba").addEventListener("click", function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
     </script>
 </body>
 

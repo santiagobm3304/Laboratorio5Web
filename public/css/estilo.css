@@ -112,3 +112,16 @@ form button {
         background-size: contain;
     }
 }
+
+.boton-volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 40px;
+    border-radius: 100%;
+  }
+
+  .boton-volver-arriba img{
+    width: 100%;
+  }
