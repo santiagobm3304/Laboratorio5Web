@@ -5,6 +5,22 @@ router.get('/', function (req, res){
     res.sendFile(__dirname + '/index.html');
 });
 
+router.get('/prueba-jade', function(req, res){
+    res.render('index');
+});
+
+router.get('/laboratorio6', function(req, res){
+    res.render('proyecto');
+});
+
+router.get('/productos', function(req, res){
+    res.render('productos');
+});
+
+router.get('/contacto', function(req, res){
+    res.render('contacto');
+});
+
 router.post('/', function(req, res){
     res.send('Llamada POST misma url');
 });

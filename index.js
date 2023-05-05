@@ -5,6 +5,8 @@ var io = require('socket.io')(http);
 const rutas = require('./rutas');
 var port = 3000;
 
+app.set('view engine', 'pug')
+
 app.use(express.static('files'));
 app.use('/static', express.static('public'));
 

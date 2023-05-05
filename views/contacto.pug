@@ -1,0 +1,15 @@
+extends layout 
+block content 
+
+
+    form(action="/submit" method="POST" style="display: flex; flex-direction: column; width: 80%; max-width: 500px; margin: 0 auto;")
+        label(for="name" style="margin-bottom: 10px;") Nombre:
+        input(type="text" id="name" name="name" required style="margin-bottom: 10px; padding: 10px; border: 2px solid #ccc; border-radius: 5px; font-size: 16px;")
+
+        label(for="email" style="margin-bottom: 10px;") Correo electrónico:
+        input(type="email" id="email" name="email" required style="margin-bottom: 10px; padding: 10px; border: 2px solid #ccc; border-radius: 5px; font-size: 16px;")
+
+        label(for="message" style="margin-bottom: 10px;") Mensaje:
+        textarea(id="message" name="message" required style="margin-bottom: 10px; padding: 10px; border: 2px solid #ccc; border-radius: 5px; font-size: 16px;")
+
+        button(type="submit" style="background-color: #007bff;color: #fff; border: none; border-radius: 5px; padding: 10px 20px; font-size: 16px; cursor: pointer;") Enviar

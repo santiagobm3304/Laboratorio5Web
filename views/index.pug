@@ -1,0 +1,93 @@
+
+extends layout
+block content
+
+        .container 
+           +nav("Project name", "dropdown_menu", "inverse")
+            +nav_item("index.html", "active") Home 
+            +nav_item("about.html") About 
+            +nav_item("contact.html") Contact
+            +nav_item_dropdown("#")(label="Dropdown")
+                +nav_item("#") Action
+                +nav_item("#") Another action 
+                +nav_item("#") Something else here 
+                +nav_divider 
+                +nav_header Nav header 
+                +nav_item("#") Separated link
+                +nav_item("#") One more separated link
+        
+        .row 
+            .col-md-4.col-sm-6.col-xs-12
+                +panel("Panel Heading") This is an example panel 
+            .col-md-4.col-sm-6.col-xs-12
+                +panel("Panel Heading", "success") Panel in success
+            .col-md-4.col-sm-6.col-xs-12
+                +panel("Panel Heading", "danger") Panel in danger
+            .col-md-4.col-sm-6.col-xs-12
+                +panel("Panel Heading", "info") Panel in warning
+            .col-md-4.col-sm-6.col-xs-12
+                +panel("Panel Heading", "warning") Panel in warning
+            .col-md-4.col-sm-6.col-xs-12
+                +panel("Panel Heading", "primary") Panel in primary
+
+        <a href="#" class="btn btn-default">Default</a>
+            
+        <a href="link.htm" class="btn btn-primary">Primary</a>
+
+        <a href="#" class="btn btn-success">Success</a>
+
+        <a href="#" class="btn btn-info">Info</a>
+
+        <a href="#" class="btn btn-warning">Warning</a>
+
+        <a href="#" class="btn btn-danger">Danger</a>
+
+            +button Default 
+            +button("primary", "link.html") Primary 
+            +button("success", "success.html", "large") Success 
+            +button("info", "info.html", "small") Info 
+            +button("warning", "warning.html", "mini") Warning
+
+            +alert("warning") Warning! Warning! 
+            +alert("danger") Danger Will Robinson! 
+            +alert("success") You succeeded :-)
+            +alert("info") Some information for you 
+        
+        .jumbotron 
+            h1 Hello, world! 
+            p This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information 
+            p: +button("primary", "more.htm", "large") Learn more 
+
+        +listGroup("list")
+            +listItem("active") Cras justo Odio 
+            +listItem Dapibus ac facilisis in
+            +listItem Morbi leo risus 
+            +listItem Dapibus ac facilisis in
+            +listItem Morbi leo risus 
+            +listItem Dapibus ac facilisis in
+
+        +listGroup("links")
+            +listItem("link1.html", "active")
+                +listHeading List group item heading 
+                +listText Donec id elit non mi porta gravida at eget metus.
+            +listItem("link2.html")
+                +listHeading List group item heading 
+                +listText Donec id elit non mi porta gravida at eget metus.
+            +listItem("link3.html")
+                +listHeading List group item heading 
+                +listText Donec id elit non mi porta gravida at eget metus.
+
+        +listGroup 
+            +listItem
+                +listHeading List group item heading 
+                +listText Donec id elit non mi porta gravida at eget metus.
+            +listItem
+                +listHeading List group item heading 
+                +listText Donec id elit non mi porta gravida at eget metus.
+            +listItem
+                +listHeading List group item heading 
+                +listText Donec id elit non mi porta gravida at eget metus.
+
+        script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+        script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
+        
